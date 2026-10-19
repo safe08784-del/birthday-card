@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f3ee">
+<title>Happy Birthday การ์ตูน 🌟🌟</title>
+<style>
+:root{--bg:#f7f3ee;--paper:#fffdf8;--ink:#302c27;--gold:#b99a62;--line:#e7ded1;--rose:#d9aaa0}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px 15px;background:radial-gradient(circle at 12% 15%,#e9dcc04a,transparent 30%),radial-gradient(circle at 90% 80%,#d9aaa02c,transparent 28%),var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",Tahoma,sans-serif}
+.page{width:min(100%,460px);text-align:center}.eyebrow{font-size:10px;letter-spacing:.23em;color:var(--gold);font-weight:700;margin-bottom:14px}h1{font:500 clamp(36px,10vw,49px)/1.08 Georgia,serif;letter-spacing:-.04em;margin:0}.name{font-size:25px;font-weight:600;margin-top:9px}.sub{font-size:13px;color:#827a70;margin:12px 0 22px}
+.card{position:relative;overflow:hidden;background:#fffdf8d9;border:1px solid #b99a6240;border-radius:27px;padding:24px 20px 22px;box-shadow:0 24px 70px #372c1a14}.spark{position:absolute;color:var(--gold);opacity:.6}.s1{left:20px;top:20px}.s2{right:23px;top:30px}
+.cake-area{height:185px;display:grid;place-items:center}.cake{position:relative;width:150px;height:95px;margin-top:50px;animation:float 4s ease-in-out infinite}.plate{position:absolute;bottom:-8px;left:-15px;width:180px;height:18px;border-radius:50%;background:#e9dfd0;border:1px solid #d9cbb5}.base{position:absolute;bottom:0;width:150px;height:57px;border-radius:9px 9px 15px 15px;background:linear-gradient(90deg,#e7c9bd,#f3ddd0 48%,#e4c3b6);border-bottom:5px solid #d7ad9f}.icing{position:absolute;left:-2px;top:20px;width:154px;height:20px;border-radius:10px;background:#fff9ee;z-index:2}.icing:before,.icing:after{content:"";position:absolute;top:10px;width:14px;height:22px;background:#fff9ee;border-radius:0 0 9px 9px}.icing:before{left:27px}.icing:after{right:30px;height:17px}.berry{position:absolute;top:10px;width:13px;height:13px;border-radius:50%;background:var(--rose);z-index:3}.b1{left:37px}.b2{left:69px;top:5px}.b3{right:34px}.candle{position:absolute;width:8px;height:44px;top:-27px;left:71px;z-index:4;border-radius:4px;background:repeating-linear-gradient(135deg,#fff7e7 0 5px,#d4b16f 5px 8px)}.flame{position:absolute;width:13px;height:19px;left:68px;top:-47px;z-index:5;background:#f1bf62;border-radius:60% 40% 60% 40%;box-shadow:0 0 20px #f1bf6266;animation:flicker .9s infinite alternate}.wish{color:#827a70;font:12px Georgia,serif;letter-spacing:.18em;margin-top:12px}
+.envelope-button{border:0;background:none;padding:0;width:min(100%,270px);cursor:pointer;color:inherit;-webkit-tap-highlight-color:transparent}.envelope{position:relative;width:100%;aspect-ratio:1.6;border:1px solid #d2bd98;border-radius:9px;background:#e9d9bd;overflow:hidden;box-shadow:0 12px 24px #4637221a;transition:transform .3s}.envelope:active{transform:scale(.98)}.back{position:absolute;inset:0;background:#efe2cb}.peek{position:absolute;left:8%;width:84%;height:85%;top:4%;border-radius:4px;background:#fffdf8;transition:transform .7s}.peek:before{content:"A little note for you";display:block;font:12px Georgia,serif;color:var(--gold);margin-top:18px}.front{position:absolute;inset:0;z-index:2;background:linear-gradient(145deg,transparent 49.5%,#dfc9a5 50%) left,linear-gradient(215deg,transparent 49.5%,#e5d2b1 50%) right;background-size:50.2% 100%;background-repeat:no-repeat}.flap{position:absolute;z-index:3;top:0;left:0;width:100%;height:58%;background:#f3e6ce;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .65s}.seal{position:absolute;z-index:4;left:50%;top:43%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#b9915d;color:#fff8e9;transition:opacity .25s}.envelope-button[aria-expanded=true] .flap{transform:rotateX(180deg)}.envelope-button[aria-expanded=true] .peek{transform:translateY(-27%)}.envelope-button[aria-expanded=true] .seal{opacity:0}.tap{font-size:12px;color:var(--gold);margin:13px 0 0}
+.letter{display:none;text-align:left;margin:22px 0 0;padding:24px 21px;background:var(--paper);border:1px solid var(--line);border-radius:18px;animation:appear .6s}.letter.visible{display:block}.kicker{font-size:10px;letter-spacing:.2em;color:var(--gold);font-weight:700;margin:0 0 13px}.letter h2{font-size:21px;margin:0 0 14px}.letter p{font-size:15px;line-height:1.95;color:#514b42;margin:0 0 12px}.signoff{text-align:right;color:var(--gold)!important;margin-top:20px!important}
+.music-note{display:none;justify-content:center;align-items:center;gap:8px;font-size:12px;color:#827a70;margin:16px auto 0}.music-note.visible{display:flex}.bars{display:flex;gap:3px;align-items:center;height:15px}.bars i{width:3px;height:5px;border-radius:4px;background:var(--gold);animation:bars .8s infinite alternate}.bars i:nth-child(2){height:12px;animation-delay:.2s}.bars i:nth-child(3){height:8px;animation-delay:.4s}.play{display:none;margin:12px auto 0;border:1px solid var(--line);border-radius:999px;background:transparent;padding:10px 15px;color:#827a70;font:inherit;font-size:12px}.play.visible{display:inline-block}.footer{color:#a59b8c;font-size:10px;letter-spacing:.12em;margin-top:22px}
+
+.blow-area{margin:18px auto 0;display:flex;flex-direction:column;align-items:center;gap:9px}
+.blow-button,.mic-button{border:1px solid #e7ded1;border-radius:999px;background:#fffdf8;color:#76664b;padding:11px 16px;font:inherit;font-size:12px;cursor:pointer;box-shadow:0 4px 14px #372c1a0a}
+.blow-button:active,.mic-button:active{transform:scale(.98)}
+.blow-help{font-size:11px;color:#91877a;line-height:1.7;margin:0;max-width:280px}
+.flame.out{animation:none!important;opacity:0;transform:translateY(-13px) scale(.35);transition:opacity .35s,transform .35s;box-shadow:none}
+.flame.out:after{content:"";position:absolute;width:24px;height:24px;left:-5px;top:-3px;border-radius:50%;background:radial-gradient(circle,#cfc5b6aa 0,transparent 70%);opacity:.75}
+
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes flicker{from{transform:rotate(-5deg) scale(.94);opacity:.85}to{transform:rotate(5deg) scale(1.05);opacity:1}}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@keyframes bars{from{transform:scaleY(.45)}to{transform:scaleY(1.2)}}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="page">
+<div class="eyebrow">A LITTLE BIRTHDAY SURPRISE</div>
+<h1>Happy Birthday</h1><div class="name">การ์ตูน 🌟🌟</div>
+<p class="sub">มีอะไรเล็ก ๆ อยากให้เปิดดูนะ 🎂</p>
+<section class="card" aria-label="การ์ดวันเกิด">
+<span class="spark s1">✦</span><span class="spark s2">✧</span>
+<div class="cake-area"><div class="cake"><div class="plate"></div><div class="base"></div><div class="icing"></div><div class="berry b1"></div><div class="berry b2"></div><div class="berry b3"></div><div class="candle"></div><div class="flame"></div></div></div>
+<div class="wish">MAKE A WISH ✦</div>
+<div class="blow-area" id="blowArea">
+  <button class="mic-button" id="enableMic" type="button">🎤 เปิดไมค์เพื่อเป่าเทียน</button>
+  <button class="blow-button" id="blowButton" type="button">💨 หรือแตะเพื่อเป่าเทียน</button>
+  <p class="blow-help" id="blowHelp">อธิษฐานก่อนนะ แล้วเป่าที่ไมค์ของ iPhone หรือแตะปุ่มเพื่อดับเทียน ✨</p>
+</div>
+<div style="margin:22px auto 0"><button class="envelope-button" id="openEnvelope" aria-expanded="false" aria-controls="birthdayLetter" type="button"><div class="envelope" aria-hidden="true"><div class="back"></div><div class="peek"></div><div class="front"></div><div class="flap"></div><div class="seal">✦</div></div><p class="tap" id="tapLabel">แตะเพื่อเปิดจดหมาย</p></button></div>
+<article class="letter" id="birthdayLetter" aria-live="polite"><p class="kicker">A NOTE FOR YOU ✦</p><h2>Happy Birth naaa การ์ตูน 🎂</h2><p>วันเกิดปีนี้ ขอให้มีความสุขมาก ๆ พบเจอแต่เรื่องดี ๆ เข้ามา สุขภาพแข็งแรง ไม่เจ็บไม่ป่วยนะ 🌟🌟</p><p>แล้วก็… พี่ซื้อของมาให้อยู่ในช่องฟรีซตู้เย็นนะ อย่าลืมไปดูด้วย 😊</p><p class="signoff">ขอให้เป็นปีที่ดีของการ์ตูนนะ ✨</p></article>
+<div class="music-note" id="musicNote" aria-live="polite"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="musicStatus">กำลังเล่นเพลงสำหรับการ์ตูน…</span></div>
+<button class="play" id="playMusic" type="button">▶ แตะเพื่อเล่นเพลง</button>
+</section>
+<div class="footer">MADE WITH A LITTLE WISH · JUST FOR YOU</div>
+</main>
+<!-- Place birthday-song.mp3 in the same GitHub repository as index.html -->
+<audio id="birthdayMusic" loop preload="auto"><source src="./birthday-song.mp3" type="audio/mpeg"></audio>
+<script>
+const envelopeButton=document.getElementById("openEnvelope");
+const letter=document.getElementById("birthdayLetter");
+const tapLabel=document.getElementById("tapLabel");
+const music=document.getElementById("birthdayMusic");
+const musicNote=document.getElementById("musicNote");
+const musicStatus=document.getElementById("musicStatus");
+const playButton=document.getElementById("playMusic");
+let opened=false;
+let candleOut=false;
+let audioContext=null;
+let micStream=null;
+let micSource=null;
+let analyser=null;
+let micFrame=null;
+let blowCooldown=false;
+
+function extinguishCandle(){
+  if(candleOut) return;
+  candleOut=true;
+  const flame=document.querySelector(".flame");
+  flame.classList.add("out");
+  document.getElementById("blowHelp").textContent="เย้! เป่าเทียนแล้ว 🎂 ขอให้คำอธิษฐานเป็นจริงนะ 🌟";
+  document.getElementById("enableMic").textContent="✨ เป่าเทียนเรียบร้อยแล้ว";
+  document.getElementById("enableMic").disabled=true;
+  document.getElementById("blowButton").textContent="🎉 สุขสันต์วันเกิด!";
+  document.getElementById("blowButton").disabled=true;
+  if(micFrame) cancelAnimationFrame(micFrame);
+  if(micStream) micStream.getTracks().forEach(track=>track.stop());
+  if(audioContext && audioContext.state!=="closed") audioContext.close().catch(()=>{});
+}
+
+async function enableBlowDetection(){
+  if(candleOut) return;
+  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
+    document.getElementById("blowHelp").textContent="เบราว์เซอร์นี้เปิดไมค์ไม่ได้ ลองแตะปุ่ม “แตะเพื่อเป่าเทียน” แทนได้เลย";
+    return;
+  }
+  try{
+    micStream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false},video:false});
+    const AudioCtx=window.AudioContext||window.webkitAudioContext;
+    if(!AudioCtx) throw new Error("AudioContext unavailable");
+    audioContext=new AudioCtx();
+    if(audioContext.state==="suspended") await audioContext.resume();
+    micSource=audioContext.createMediaStreamSource(micStream);
+    analyser=audioContext.createAnalyser();
+    analyser.fftSize=1024;
+    micSource.connect(analyser);
+    const samples=new Uint8Array(analyser.fftSize);
+    document.getElementById("enableMic").textContent="🎤 ไมค์พร้อมแล้ว — เป่าเลย!";
+    document.getElementById("blowHelp").textContent="อนุญาตใช้ไมค์แล้ว เป่าใกล้ไมค์ iPhone สั้น ๆ เพื่อดับเทียน";
+    const detect=()=>{
+      if(candleOut || !analyser) return;
+      analyser.getByteTimeDomainData(samples);
+      let sum=0;
+      for(let i=0;i<samples.length;i++){const d=(samples[i]-128)/128;sum+=d*d;}
+      const rms=Math.sqrt(sum/samples.length);
+      if(rms>0.19 && !blowCooldown){
+        blowCooldown=true;
+        extinguishCandle();
+        setTimeout(()=>{blowCooldown=false;},900);
+        return;
+      }
+      micFrame=requestAnimationFrame(detect);
+    };
+    detect();
+  }catch(error){
+    document.getElementById("blowHelp").textContent="ไมค์ใช้ไม่ได้หรือยังไม่ได้รับอนุญาต ลองแตะปุ่ม “แตะเพื่อเป่าเทียน” แทนได้เลย";
+  }
+}
+async function startMusic(){
+  try{await music.play();musicNote.classList.add("visible");playButton.classList.remove("visible");musicStatus.textContent="กำลังเล่นเพลงสำหรับการ์ตูน ♫";}
+  catch(e){musicNote.classList.remove("visible");playButton.classList.add("visible");playButton.textContent="▶ แตะเพื่อเล่นเพลง";}
+}
+document.getElementById("enableMic").addEventListener("click",enableBlowDetection);
+document.getElementById("blowButton").addEventListener("click",extinguishCandle);
+
+envelopeButton.addEventListener("click",async()=>{
+  if(!opened){opened=true;envelopeButton.setAttribute("aria-expanded","true");letter.classList.add("visible");tapLabel.textContent="จดหมายของการ์ตูน 💌";document.querySelector(".flame").style.animation="none";await startMusic();}
+  else{letter.classList.toggle("visible");tapLabel.textContent=letter.classList.contains("visible")?"จดหมายของการ์ตูน 💌":"แตะเพื่อดูจดหมายอีกครั้ง";}
+});
+playButton.addEventListener("click",startMusic);
+music.addEventListener("error",()=>{musicNote.classList.remove("visible");playButton.classList.add("visible");playButton.textContent="ไม่พบไฟล์เพลง — ตรวจชื่อ birthday-song.mp3";});
+</script>
+</body>
+</html>
